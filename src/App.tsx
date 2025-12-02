@@ -63,10 +63,10 @@ function HeroSection({ onOpenAuth }: { onOpenAuth: (mode: 'signin' | 'signup') =
     onOpenAuth('signup');
   };
 
-  const scrollToTrustBadges = () => {
-    const trustBadgesSection = document.querySelector('.py-16.bg-white');
-    if (trustBadgesSection) {
-      trustBadgesSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToHowItWorks = () => {
+    const element = document.getElementById('how-it-works');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -77,56 +77,79 @@ function HeroSection({ onOpenAuth }: { onOpenAuth: (mode: 'signin' | 'signup') =
         <div className="absolute inset-0 bg-black/30" />
         {/* Petal Mark Gradient Overlay */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <img 
-            alt="" 
-            className="w-[431px] h-[430px] object-cover opacity-[0.12] pointer-events-none" 
-            src={imgScreenshot20250911At1107271} 
+          <img
+            alt=""
+            className="w-[431px] h-[430px] object-cover opacity-[0.12] pointer-events-none"
+            src={imgScreenshot20250911At1107271}
           />
         </div>
       </div>
-      
+
       {/* Main Content */}
-      <div className="relative z-10 flex-1 flex items-center justify-center pt-32 pb-20">
-        <div className="max-w-7xl mx-auto px-6 w-full">
-          <div className="text-center max-w-4xl mx-auto">
-            <motion.h1 
-              className="text-h1 text-white mb-12"
-              style={{ fontFamily: 'Fontspring Demo - Deca Serif New' }}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            >
-              Every woman deserves a trusted guide for her health.
-            </motion.h1>
+      <div className="relative z-10 flex-1 flex flex-col justify-between px-6 py-12 md:px-16 md:py-16 lg:px-24 lg:py-20">
+        {/* Hero Content */}
+        <div className="max-w-4xl pt-20 md:pt-32">
+          <motion.h1
+            className="mb-12 text-white text-4xl md:text-5xl lg:text-6xl font-normal leading-tight"
+            style={{ fontFamily: "'Droid Serif', serif" }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          >
+            Every woman deserves a<br />trusted guide for her health.
+          </motion.h1>
 
-            <motion.div 
-              className="flex flex-col items-center gap-6 mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          <motion.div
+            className="flex flex-wrap gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <button
+              onClick={handleJoinWaitlist}
+              className="rounded-full px-6 py-4 text-white hover:opacity-90 transition-opacity text-xs uppercase tracking-wider border-0"
+              style={{
+                fontFamily: "'IBM Plex Mono', monospace",
+                background: 'linear-gradient(135deg, #f2e9ff 0%, #73a1ff 100%)'
+              }}
             >
-              <button 
-                onClick={handleJoinWaitlist}
-                className="bg-white text-black px-8 py-3.5 text-button-label hover:bg-white/90 transition-colors rounded-[var(--radius-sm)]"
-              >
-                Get started free
-              </button>
-
-              {/* Scroll Arrow */}
-              <button 
-                onClick={scrollToTrustBadges}
-                className="group cursor-pointer bg-transparent border-none p-0"
-                aria-label="Learn more"
-              >
-                <div className="flex flex-col items-center gap-2 text-white/60 hover:text-white/80 transition-colors">
-                  <span className="text-button-label">learn more</span>
-                  <div className="w-px h-12 bg-current group-hover:h-16 transition-all duration-300"></div>
-                  <div className="w-0 h-0 border-l-[6px] border-r-[6px] border-t-[8px] border-l-transparent border-r-transparent border-t-current"></div>
-                </div>
-              </button>
-            </motion.div>
-          </div>
+              Join our Waitlist
+            </button>
+            <button
+              onClick={scrollToHowItWorks}
+              className="rounded-full border-2 border-white bg-transparent px-6 py-4 text-white hover:bg-white/10 transition-colors text-xs uppercase tracking-wider"
+              style={{ fontFamily: "'IBM Plex Mono', monospace" }}
+            >
+              How Sela Works
+            </button>
+          </motion.div>
         </div>
+
+        {/* Bottom Content - Who we are section */}
+        <motion.div
+          className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between md:gap-12 mt-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <div>
+            <p
+              className="text-white text-sm md:text-base lg:text-lg leading-relaxed"
+              style={{ fontFamily: "'Archivo', sans-serif" }}
+            >
+              Who we are
+            </p>
+          </div>
+
+          <div className="max-w-xl">
+            <p
+              className="text-white text-lg md:text-xl lg:text-2xl leading-relaxed md:text-right"
+              style={{ fontFamily: "'Archivo', sans-serif" }}
+            >
+              Sela is your AI women's health companion — warm, judgment-free, and here to help you understand your body.
+            </p>
+          </div>
+        </motion.div>
       </div>
 
       {/* Rotating Provider Types Carousel */}
