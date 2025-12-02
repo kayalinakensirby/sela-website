@@ -12,6 +12,7 @@ import imgExclude2 from "figma:asset/781c02a8a6edb14bb850d18fe62d181284d5bb96.pn
 import imgRectangle12 from "figma:asset/810ce3bbea53b832d80bbd5fbf9d63b24bf0860d.png";
 import imgRectangle10 from "figma:asset/8918d678c100e67b5a0c3fd50dcf72e018ad42b2.png";
 import imgHeroNew from "figma:asset/0a80897977869a91b3c39d1857b18a09a898c8a4.png";
+import heroVideo from "./assets/DTS_YEARNING__Joey_Bania_Clips_ID477.mp4";
 import imgRectangle3 from "figma:asset/e40c34c65fdb07b0149bc63ec4c874fb18ff61fc.png";
 import imgRectangle4 from "figma:asset/34b4a668a0ba2912c4ce7ff815659c5cc9b60053.png";
 import imgRectangle5 from "figma:asset/5b93901f65e8bae0f3dbf1f4bce5786bd5706ce9.png";
@@ -73,7 +74,15 @@ function HeroSection({ onOpenAuth }: { onOpenAuth: (mode: 'signin' | 'signup') =
   return (
     <section className="relative min-h-screen flex flex-col">
       <div className="absolute inset-0">
-        <img alt="Hero Background" className="absolute inset-0 object-cover size-full" src={imgHeroNew} />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 object-cover size-full"
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-black/30" />
         {/* Petal Mark Gradient Overlay */}
         <div className="absolute inset-0 flex items-center justify-center">
