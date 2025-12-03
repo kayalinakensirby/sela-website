@@ -76,7 +76,7 @@ function TextContent() {
           </svg>
         </div>
       </div>
-      <p className="font-['PP_Neue_Montreal:Book',_sans-serif] leading-[32px] not-italic relative shrink-0 text-[21px] text-[rgba(255,255,255,0.9)] w-[942px]">{`Your 24/7 Health Companion Tell us what you're feeling—physically, emotionally, or anything in between. Ask Sela anything about your body or health. She’ll respond with evidence-based information, tailored to your needs. No judgment, just support from the doctor best friend you've always wished for.`}</p>
+      <p className="font-['Neue_Haas_Grotesk',_sans-serif] leading-[32px] not-italic relative shrink-0 text-[21px] text-[rgba(255,255,255,0.9)] w-[942px]">{`Your 24/7 Health Companion Tell us what you're feeling—physically, emotionally, or anything in between. Ask Sela anything about your body or health. She’ll respond with evidence-based information, tailored to your needs. No judgment, just support from the doctor best friend you've always wished for.`}</p>
     </div>
   );
 }
@@ -124,7 +124,7 @@ function TextContent1() {
           </svg>
         </div>
       </div>
-      <p className="font-['PP_Neue_Montreal:Book',_sans-serif] leading-[32px] not-italic relative shrink-0 text-[21px] text-[rgba(255,255,255,0.9)] w-[889px]">{`Designed for Your Body We help you make sense of what's going on with recommendations and step-by-step plans designed for your body, your goals, and your stage of life—no barriers, no cost.`}</p>
+      <p className="font-['Neue_Haas_Grotesk',_sans-serif] leading-[32px] not-italic relative shrink-0 text-[21px] text-[rgba(255,255,255,0.9)] w-[889px]">{`Designed for Your Body We help you make sense of what's going on with recommendations and step-by-step plans designed for your body, your goals, and your stage of life—no barriers, no cost.`}</p>
     </div>
   );
 }
@@ -172,7 +172,7 @@ function TextContent2() {
           </svg>
         </div>
       </div>
-      <p className="font-['PP_Neue_Montreal:Book',_sans-serif] leading-[32px] not-italic relative shrink-0 text-[21px] text-[rgba(255,255,255,0.9)] w-[964px]">{`Seamless Booking with Verified Providers Find trusted providers who truly specialize in what you need. Compare your options and book directly through Sela's Verified Network—the first quality-screened women's health specialists you can actually trust.`}</p>
+      <p className="font-['Neue_Haas_Grotesk',_sans-serif] leading-[32px] not-italic relative shrink-0 text-[21px] text-[rgba(255,255,255,0.9)] w-[964px]">{`Seamless Booking with Verified Providers Find trusted providers who truly specialize in what you need. Compare your options and book directly through Sela's Verified Network—the first quality-screened women's health specialists you can actually trust.`}</p>
     </div>
   );
 }

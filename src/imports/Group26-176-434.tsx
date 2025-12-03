@@ -76,7 +76,7 @@ function TextContent() {
           </svg>
         </div>
       </div>
-      <p className="font-['PP_Neue_Montreal:Book',_sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(255,255,255,0.9)] w-[339px]">We connect you with the best care providers.</p>
+      <p className="font-['Neue_Haas_Grotesk',_sans-serif] leading-[32px] not-italic relative shrink-0 text-[24px] text-[rgba(255,255,255,0.9)] w-[339px]">We connect you with the best care providers.</p>
     </div>
   );
 }
@@ -124,7 +124,7 @@ function TextContent1() {
           </svg>
         </div>
       </div>
-      <p className="font-['PP_Neue_Montreal:Book',_sans-serif] leading-[32px] min-w-full not-italic relative shrink-0 text-[24px] text-[rgba(255,255,255,0.9)] w-[min-content]">We connect you with the best care providers.</p>
+      <p className="font-['Neue_Haas_Grotesk',_sans-serif] leading-[32px] min-w-full not-italic relative shrink-0 text-[24px] text-[rgba(255,255,255,0.9)] w-[min-content]">We connect you with the best care providers.</p>
     </div>
   );
 }
@@ -172,7 +172,7 @@ function TextContent2() {
           </svg>
         </div>
       </div>
-      <p className="font-['PP_Neue_Montreal:Book',_sans-serif] leading-[32px] min-w-full not-italic relative shrink-0 text-[24px] text-[rgba(255,255,255,0.9)] w-[min-content]">We connect you with the best care providers.</p>
+      <p className="font-['Neue_Haas_Grotesk',_sans-serif] leading-[32px] min-w-full not-italic relative shrink-0 text-[24px] text-[rgba(255,255,255,0.9)] w-[min-content]">We connect you with the best care providers.</p>
     </div>
   );
 }

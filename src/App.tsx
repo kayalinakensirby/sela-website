@@ -100,7 +100,7 @@ function HeroSection({ onOpenAuth }: { onOpenAuth: (mode: 'signin' | 'signup') =
         <div className="max-w-4xl pt-20 md:pt-32">
           <motion.h1
             className="mb-12 text-white text-4xl md:text-5xl lg:text-6xl font-normal leading-tight"
-            style={{ fontFamily: "'Droid Serif', serif" }}
+            style={{ fontFamily: "'FONTSPRING DEMO - Deca Serif New', serif" }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
@@ -144,7 +144,7 @@ function HeroSection({ onOpenAuth }: { onOpenAuth: (mode: 'signin' | 'signup') =
           <div>
             <p
               className="text-white text-sm md:text-base lg:text-lg leading-relaxed"
-              style={{ fontFamily: "'Archivo', sans-serif" }}
+              style={{ fontFamily: "'Neue Haas Grotesk', sans-serif" }}
             >
               Who we are
             </p>
@@ -153,7 +153,7 @@ function HeroSection({ onOpenAuth }: { onOpenAuth: (mode: 'signin' | 'signup') =
           <div className="max-w-xl">
             <p
               className="text-white text-lg md:text-xl lg:text-2xl leading-relaxed md:text-right"
-              style={{ fontFamily: "'Archivo', sans-serif" }}
+              style={{ fontFamily: "'Neue Haas Grotesk', sans-serif" }}
             >
               Sela is your AI women's health companion — warm, judgment-free, and here to help you understand your body.
             </p>

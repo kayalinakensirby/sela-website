@@ -108,7 +108,7 @@ export default function HowSelaSupportsYouModal({ isOpen, onClose, selectedStep 
                 {/* Underline */}
                 <div className="h-0.5 bg-white w-[227px]" />
                 
-                <p className="font-['PP_Neue_Montreal:Book',_sans-serif] text-[24px] leading-[130%] text-white/90">
+                <p className="font-['Neue_Haas_Grotesk',_sans-serif] text-[24px] leading-[130%] text-white/90">
                   {step.description}
                 </p>
               </div>
