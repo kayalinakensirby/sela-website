@@ -95,7 +95,7 @@ function HeroSection({ onOpenAuth }: { onOpenAuth: (mode: 'signin' | 'signup') =
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex-1 flex flex-col justify-between pl-12 pr-6 py-12 md:pl-24 md:pr-16 md:py-16 lg:pl-32 lg:pr-24 lg:py-20">
+      <div className="relative z-10 flex-1 flex flex-col justify-between w-full max-w-[1344px] mx-auto px-6 py-12 md:py-16 lg:py-20">
         {/* Hero Content */}
         <div className="max-w-4xl pt-20 md:pt-32">
           <motion.h1
